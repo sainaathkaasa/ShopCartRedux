@@ -1,0 +1,70 @@
+.toDisplayProducts
+{
+    width: 100%;
+    padding: 10px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    background: url('https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg') repeat fixed;
+   
+}
+.proudct
+{
+    width: 23%;
+    border: 1px solid ;
+    /* border-radius: 10%; */
+    box-shadow: 1px 1px 2px #053506;
+    display: flex;
+    flex-direction: column; 
+    background-color: #053506; 
+}
+.proudct>.thumbnail{
+    border-radius: 10%;
+    padding: 10px;
+    /* background-color: #053506; */
+    z-index: 1;
+    position: relative;
+}
+.wishlist--heart{
+    position: absolute;
+    z-index: 2;
+    padding: 5px;
+    color: red;
+    
+}
+.wishlist--heart:hover{
+    color: #053506;
+}
+.proudct>.thumbnail img{
+    display: flex;
+    border-radius: 10%;
+}
+
+.info{
+    padding: 10px;
+    height: 180px;
+    color: white;
+}
+.info p{
+    padding: 10px;
+}
+.cart--but{
+    padding-bottom: 10px;
+    padding-top: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+   
+}
+.cart--but button{
+    text-align: center;
+    padding: 10px 80px;
+    border-radius: 10px;
+    border: none;
+}
+.cart--but button:hover{
+    background-color: #053506;
+    color: white;
+}

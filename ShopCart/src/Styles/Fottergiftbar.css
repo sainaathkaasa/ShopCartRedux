@@ -1,0 +1,10 @@
+.footergift{
+    background-color: #053506;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+.footergift div i{
+    padding: 1px 3px;
+}

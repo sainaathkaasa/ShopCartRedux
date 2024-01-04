@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Advertise{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 10px;
+    background-color: #053506;
+    color: white;
+}
+.contact--number{
+    position: absolute;
+    left: 50px;
+}
+.shopnow{
+    position: absolute;
+    left: 750px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+select{
+    background-color:#053506;
+    color: white;
+    border: transparent;
+}
+option{
+    border: transparent;
+}

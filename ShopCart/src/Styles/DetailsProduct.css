@@ -1,0 +1,33 @@
+.details{
+    padding: 10px;
+}
+.detailsblock{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+.image img{
+    border: 1px solid ;
+    border-radius: 10%;
+    box-shadow: 1px 1px 2px #053506;
+}
+.content{
+    background-color: #053506;
+    color: white;
+    border-radius: 10px;
+    width: 70%;
+}
+.content h1, .content h2, .content h3, .content p{
+    padding: 10px;
+}
+.moreimages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cart--but button{
+    border: 1px solid #053506;
+}
+.detailsblock .wishlist--heart{
+    padding: 10px;
+}

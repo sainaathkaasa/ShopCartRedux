@@ -1,0 +1,42 @@
+.main--image{
+    height: 80vh;
+    width: 100%;
+    background: url("https://png.pngtree.com/thumb_back/fw800/background/20220909/pngtree-luxury-holiday-gifts-on-marble-shopping-gift-for-her-new-year-photo-image_48314430.jpg ") no-repeat center;
+    background-size: 100% 100%; 
+    /* https://png.pngtree.com/thumb_back/fw800/background/20220909/pngtree-luxury-holiday-gifts-on-marble-shopping-gift-for-her-new-year-photo-image_48314430.jpg */
+    /* https://wallpapercosmos.com/w/full/e/8/6/38379-3840x2160-desktop-4k-christmas-wallpaper-image.jpg */
+    /* https://miro.medium.com/v2/resize:fit:1100/format:webp/1*JvSQ9A9Jc9Un9IhGIXwgVg.jpeg */
+    /* https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_1280.jpg */
+    display: flex;
+    flex-direction: column;
+    padding: 80px 270px;
+    gap: 20px;
+    
+}
+.heading{
+    width: 70%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #053506;
+    text-shadow: 1px 2px 1px white;
+}
+.paragraph{
+    font-size: 18px;
+    width: 60%;
+    color: #053506;
+    text-shadow: 0.1px 0.1px 1px white;
+}
+.learnmore--but{
+    padding: 6px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #053506;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.learnmore--but:hover{
+    background-color: #053506;
+    color: white;
+}
