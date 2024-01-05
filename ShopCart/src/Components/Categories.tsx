@@ -2,7 +2,7 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 import { useDispatch } from "react-redux"
 import { addProducts } from "../dux/productSlice"
-import '../styles/Categories.css'
+import '../Styles/Categories.css'
 const Categories=()=>{
  
     const [products,setProducts]=useState([])
