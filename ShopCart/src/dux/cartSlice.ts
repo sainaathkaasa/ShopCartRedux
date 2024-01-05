@@ -41,10 +41,7 @@ const cartSlice = createSlice({
     },
 
     removeItemFromCart: (state, { payload }) => {
-      state.cart = state.cart.filter((items:any) => {
-
-        return (items.id !== payload.id)
-      })
+      state.cart =  state.cart.filter((item : any) => item.id !== payload.id)
       state.count -= 1
     }
 

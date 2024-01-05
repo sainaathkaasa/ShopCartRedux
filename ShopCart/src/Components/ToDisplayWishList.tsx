@@ -1,12 +1,13 @@
 import { useDispatch, useSelector } from "react-redux"
-import { wishListItems } from "../dux/wishListSlice"
-import { addToCart } from "../dux/cartSlice";
+import { removeFromWishlist, wishListItems } from "../dux/wishListSlice"
+import { addToCart, cartItems } from "../dux/cartSlice";
 import { useNavigate } from "react-router-dom";
  
 const ToDisplayWishList =()=>{
 
     const nav = useNavigate()
     const wishList=useSelector(wishListItems)
+    const itemsInCart = useSelector(cartItems)
     const dispatch = useDispatch()
  
     const handleAddToCartClick = (val: any) => {
@@ -17,6 +18,21 @@ const ToDisplayWishList =()=>{
     const Detailshandle=(val:any)=>{
         nav('/DetailsOfProduct',{state:{val}})
     }
+
+
+    // removeFromWishlist
+
+
+    const cartitemIds = itemsInCart?.map((item:any) => item.id);
+
+    const handleRemoveitemwish=(val:any)=>{
+        console.log("deleted");
+        
+        dispatch(removeFromWishlist(val))
+    }
+    
+
+
     return (
         <>
             <div>
@@ -24,7 +40,7 @@ const ToDisplayWishList =()=>{
             </div>
             <div className="toDisplayProducts">
                 {
-                    wishList.map((val: any) => (
+                    wishList?.map((val: any) => (
  
                        
                        
@@ -32,7 +48,7 @@ const ToDisplayWishList =()=>{
                             <div className="thumbnail">
                                 <img src={val.thumbnail} height={200} width={270} onClick={()=>Detailshandle(val)}/>
                             </div>
-                            {/* <div><button >X</button></div> */}
+                            <div><button className="Xbut" onClick={()=>handleRemoveitemwish(val)}>X</button></div>
                             <div className="info">
  
                                 <p><b>{val.title}</b></p>
@@ -42,7 +58,7 @@ const ToDisplayWishList =()=>{
                             </div>
                             <div className="cart--but">
  
-                                <div className="button"><button onClick={() => handleAddToCartClick(val)}  >Add To Cart</button></div>
+                            <div className="button"><button id="addtocartbut" onClick={() => handleAddToCartClick(val)}  >{cartitemIds?.includes(val.id) ? "Added" : "Add To Cart"}</button></div>
                             </div>
                         </div>
                     ))

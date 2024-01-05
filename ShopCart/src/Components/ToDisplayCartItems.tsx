@@ -24,7 +24,7 @@ const ToDisplayCartItems = () => {
   }
 
   let total_price = 0
-  cart.map((item:any)=>{
+  cart?.map((item:any)=>{
     total_price = total_price +(item.price * item.quantity)
   })
 
@@ -37,6 +37,9 @@ const ToDisplayCartItems = () => {
   if(cartItemsCount=== 0){
     TorF = true
   }
+
+
+  
 
   return (
     <>
@@ -71,7 +74,7 @@ const ToDisplayCartItems = () => {
 
         </div>
         <div className="ToDisplayCartItems">
-          {cart.map((val: any) => (
+          {cart?.map((val: any) => (
             <div key={val.id} className="items">
               <div className="items--img">
                 <img src={val.thumbnail} alt="" height={100} width={100} />

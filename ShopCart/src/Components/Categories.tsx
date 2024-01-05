@@ -26,7 +26,7 @@ const Categories=()=>{
          axios.get(`https://dummyjson.com/products/${linkcategory}`)
          .then((response)=>{
             console.log(response.data.products);
-           
+            setProducts(response.data.products)
              dispatch(addProducts(response.data.products))
          })
          .catch(()=>{
