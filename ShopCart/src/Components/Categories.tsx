@@ -39,7 +39,7 @@ const Categories=()=>{
     const handleChangeSort = (e: any) => {
         let sortedProducts = [...products];
         if (e === "Price") {
-            sortedProducts.sort((a, b) => a.price - b.price)
+            sortedProducts.sort((a:any, b:any) => a.price - b.price)
             setProducts(sortedProducts)
  
             dispatch(addProducts(sortedProducts))
@@ -48,7 +48,7 @@ const Categories=()=>{
         if (e === "A-Z") {
  
  
-            sortedProducts.sort((a, b) => a.title.localeCompare(b.title));
+            sortedProducts.sort((a:any, b:any) => a.title.localeCompare(b.title));
  
             console.log(sortedProducts);
  

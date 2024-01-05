@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
  
-const initialState = {
+const initialState:any = {
     wishList: [],
 };
  
@@ -10,7 +10,7 @@ const wishListSlice = createSlice({
     reducers: {
         addTowishList: (state, { payload }) => {
  
-            const existingItem = state.wishList.find(item => item.id === payload.id);
+            const existingItem = state.wishList.find((item:any) => item.id === payload.id);
  
  
             if (!existingItem) {
