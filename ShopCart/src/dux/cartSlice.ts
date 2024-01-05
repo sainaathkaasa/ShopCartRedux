@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
+const initialState:any = {
   cart: [],
   count: 0,
 };
@@ -11,7 +11,7 @@ const cartSlice = createSlice({
   reducers: {
     addToCart: (state, { payload }) => {
 
-      const existingItem = state.cart.find(item => item.id === payload.id);
+      const existingItem = state.cart.find((item:any) => item.id === payload.id);
 
 
       if (!existingItem) {
@@ -20,7 +20,7 @@ const cartSlice = createSlice({
       }
     },
     updateCount: (state, { payload }) => {
-      state.cart.map((products) => {
+      state.cart.map((products:any) => {
         if (products.id === payload.id) {
           products.quantity += 1
           // state.count = state.count + 1;
@@ -31,7 +31,7 @@ const cartSlice = createSlice({
       )
     },
     DecreaseCount: (state, { payload }) => {
-      state.cart.map((products) => {
+      state.cart.map((products:any) => {
         if (products.id === payload.id) {
           products.quantity -= 1
           // state.count = state.count - 1;
@@ -41,7 +41,7 @@ const cartSlice = createSlice({
     },
 
     removeItemFromCart: (state, { payload }) => {
-      state.cart = state.cart.filter((items) => {
+      state.cart = state.cart.filter((items:any) => {
 
         return (items.id !== payload.id)
       })
@@ -55,4 +55,4 @@ const cartSlice = createSlice({
 export const cartItems = (state: any) => state.cartItem.cart;
 export const count = (state: any) => state.cartItem.count;
 export const { addToCart, updateCount, DecreaseCount, removeItemFromCart } = cartSlice.actions;
-export default cartSlice.reducer;
+export default cartSlice.reducer; 
