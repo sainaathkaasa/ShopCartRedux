@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { DecreaseCount, cartItems, count, removeItemFromCart, updateCount } from '../dux/cartSlice';
-import '../styles/ToDisplayCartItems.css';
-
+import '../Styles/ToDisplayCartItems.css'
 const ToDisplayCartItems = () => {
   const cart = useSelector(cartItems);
   const dispatch=useDispatch()
