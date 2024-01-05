@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../styles/Navbar.css'
+import '../Styles/Navbar.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { count } from '../dux/cartSlice'
 import { useEffect, useRef, useState } from 'react'

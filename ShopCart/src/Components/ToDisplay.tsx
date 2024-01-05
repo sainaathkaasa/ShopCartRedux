@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { allItems } from "../dux/productSlice";
-import '../styles/ToDisplay.css'
+import '../Styles/ToDisplay.css'
 import { addToCart } from "../dux/cartSlice";
 import { addTowishList } from "../dux/wishListSlice";
 import DetailsOfProduct from "./DetailsProduct";

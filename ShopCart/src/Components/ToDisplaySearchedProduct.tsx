@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
 import { foundResults } from "../dux/SearchSlice"
-// import '../styles/ToDisplaySearchResultProduct.css'
 import { addToCart } from "../dux/cartSlice";
 import { allItems } from "../dux/productSlice";
 import { addTowishList } from "../dux/wishListSlice";
