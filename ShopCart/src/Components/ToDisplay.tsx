@@ -3,8 +3,7 @@ import { allItems } from "../dux/productSlice";
 import '../Styles/ToDisplay.css'
 import { addToCart } from "../dux/cartSlice";
 import { addTowishList } from "../dux/wishListSlice";
-import DetailsOfProduct from "./DetailsProduct";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const ToDisplay = () => {
     const products = useSelector(allItems);
     const nav = useNavigate()

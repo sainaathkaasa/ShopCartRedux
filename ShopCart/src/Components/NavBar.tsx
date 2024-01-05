@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom'
-import '../Styles/Navbar.css'
+import '../Styles/NavBar.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { count } from '../dux/cartSlice'
-import { useEffect, useRef, useState } from 'react'
-import axios from 'axios'
+import {useRef, useState } from 'react'
 import { addProducts, allItems } from '../dux/productSlice'
-
-import { wishListItems } from '../dux/wishListSlice'
-import { addToSearchedProduct, foundResults } from '../dux/SearchSlice'
+import { addToSearchedProduct} from '../dux/SearchSlice'
 const Navbar = () => {
 
     const countOfCartItems = useSelector(count)

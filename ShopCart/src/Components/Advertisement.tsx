@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
-import "../Styles/Advertisement.css"
-
+import '../Styles/Advertisement.css'
 const Advertisement=()=>{
     return(
         <>

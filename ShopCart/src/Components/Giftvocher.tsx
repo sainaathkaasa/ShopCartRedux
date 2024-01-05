@@ -1,6 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
 import '../Styles/Giftvocher.css'
-
 const Giftvocher = () => {
     
     return (
