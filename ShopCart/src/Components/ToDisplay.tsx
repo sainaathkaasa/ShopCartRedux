@@ -42,7 +42,8 @@ const ToDisplay = () => {
             <div className="toDisplayProducts">
                 {
                     entries?.map((val: any) => (
- 
+
+                        
  
                         <div className="proudct">
                             <div className={`${wishListIds?.includes(val[1].id) ? "wishlist--heartClicked" : "wishlist--heart"}`}><i className="fa-solid fa-heart" onClick={()=>handleHeart(val[1])}  ></i></div>
